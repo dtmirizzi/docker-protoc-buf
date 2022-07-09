@@ -17,7 +17,10 @@ docker pull dtmirizzi/docker-protoc-buf
 
 ### Run
 ```
-s
+docker run --volume "$(pwd):/workspace" \
+  --workdir /workspace \
+  dtmirizzi/docker-protoc-buf
+  mod init
 ```
 ---
 ## Development
