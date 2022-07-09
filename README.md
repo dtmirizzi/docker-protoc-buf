@@ -17,14 +17,17 @@ docker pull dtmirizzi/docker-protoc-buf
 
 ### Run
 ```
-docker run --volume "$(pwd):/workspace" \
-  --workdir /workspace \
-  dtmirizzi/docker-protoc-buf
-  mod init
+docker run --volume "$(pwd):/workspace" --workdir /workspace dtmirizzi/docker-protoc-buf mod init
+```
+
+```
+docker run --volume "$(pwd):/workspace" --workdir /workspace dtmirizzi/docker-protoc-buf generate foo
 ```
 ---
 ## Development
-
+- Install [precommit](https://pre-commit.com/)
+- Clone
+- Ship
 
 ---
 Based on [namely's docker-protoc](https://github.com/namely/docker-protoc) and [Buf.build's buf](https://github.com/bufbuild/buf)
